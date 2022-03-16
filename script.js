@@ -23,6 +23,7 @@ class Calculator {
     updateDisplay() {
         this.currentDisplayElement.innerText = this.currentDisplay
         this.previousDisplayElement.innerText = this.previousDisplay
+       
 
     }
 
@@ -47,17 +48,17 @@ class Calculator {
         this.operation = operation
     }
     calc2() {
-        let result
+        let c
         const current = parseFloat(this.currentDisplay)
         switch(this.operation) {
 
             case '%': 
-                result = current/100;
+                c = current/100;
                 break;
             default:
                 return
         }
-        this.currentDisplay = result
+        this.currentDisplay = c
         this.operation = undefined
     }
 
