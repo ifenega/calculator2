@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  width: 359px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.64);
+  color: white;
+  border-radius: 8px;
+  margin: 100px auto;
+  -webkit-box-shadow: 1px 2px 16px rgba(186, 149, 158, 0.2);
+          box-shadow: 1px 2px 16px rgba(186, 149, 158, 0.2);
+}
+
+section .display {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 80px;
+  font-size: 30px;
+  text-align: end;
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .display .previous-display {
+  opacity: 0.5;
+  font-size: 0.6em;
+}
+
+section .display .current-display {
+  font-size: 1.2em;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+section .button-class {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section .button-class .button {
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  cursor: pointer;
+}
+
+section .button-class .operation2 {
+  background-color: orange;
+}
+
+section .button-class .equal {
+  grid-column: 3/-1;
+}
+/*# sourceMappingURL=style.css.map */
